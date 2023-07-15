@@ -1,0 +1,42 @@
+﻿@using MVCSchool.Models.EntityFramework
+@model List<TBLNOTLAR>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2><b>ÖĞRENCİ DERS NOTLARI</b></h2>
+<br />
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>NOT ID</th>
+        <th>DERS ID</th>
+        <th>ÖĞRENCİ ID</th>
+        <th>SINAV1</th>
+        <th>SINAV2</th>
+        <th>SINAV3</th>
+        <th>PROJE</th>
+        <th>ORTALAMA</th>
+        <th>DURUM</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NOTID</td>
+                <td>@item.DERSID</td>
+                <td>@item.OGRID</td>
+                <td>@item.SINAV1</td>
+                <td>@item.SINAV2</td>
+                <td>@item.SINAV3</td>
+                <td>@item.PROJE</td>
+                <td>@item.ORTLAMA</td>
+                <td>@item.DURUM</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
