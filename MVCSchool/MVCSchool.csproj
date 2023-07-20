@@ -598,6 +598,7 @@
     <Content Include="Views\Iletisim\Index.cshtml" />
     <Content Include="Views\Default\YeniDers.cshtml" />
     <Content Include="Views\Kulup\YeniKulup.cshtml" />
+    <Content Include="Views\Ogrenci\YeniOgrenci.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

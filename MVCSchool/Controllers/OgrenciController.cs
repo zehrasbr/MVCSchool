@@ -15,5 +15,18 @@ namespace MVCSchool.Controllers
             var ogrenciler = db.TBLOGRENCILER.ToList();
             return View(ogrenciler);
         }
+        [HttpGet]
+        public ActionResult YeniOgrenci() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniOgrenci(TBLOGRENCILER p)
+        {
+            db.TBLOGRENCILER.Add(p);
+            db.SaveChanges();
+            return View();
+        }
+
     }
 }
